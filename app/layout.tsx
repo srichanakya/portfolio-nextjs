@@ -1,6 +1,4 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
+export const metadata = {
   title: "Sri Chanakya Yennana | Software Engineer",
   description: "Software Developer Analyst at Goldman Sachs. High-performance backend systems, payment infrastructure, and distributed architecture.",
 };
