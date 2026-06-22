@@ -4,26 +4,11 @@ import { motion } from "framer-motion";
 import { MapPin, Calendar } from "lucide-react";
 
 function UTDLogo() {
-  return (
-    <svg viewBox="0 0 56 56" width="38" height="38" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="28" cy="28" r="28" fill="#154734"/>
-      <text x="28" y="22" fontFamily="Georgia, serif" fontSize="9.5" fontWeight="700" fill="#C75B12" textAnchor="middle" letterSpacing="0.5">THE</text>
-      <text x="28" y="33" fontFamily="Georgia, serif" fontSize="8" fontWeight="700" fill="#fff" textAnchor="middle" letterSpacing="0.3">UNIVERSITY</text>
-      <text x="28" y="42" fontFamily="Georgia, serif" fontSize="7.5" fontWeight="700" fill="#fff" textAnchor="middle" letterSpacing="0.2">OF TEXAS</text>
-      <line x1="10" y1="24.5" x2="46" y2="24.5" stroke="#C75B12" strokeWidth="0.8"/>
-    </svg>
-  );
+  return <img src="/utd-logo.png" alt="UT Dallas" style={{ width: 44, height: 44, objectFit: "contain" }} />;
 }
 
 function GitamLogo() {
-  return (
-    <svg viewBox="0 0 56 56" width="38" height="38" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="28" cy="28" r="28" fill="#003087"/>
-      <text x="28" y="25" fontFamily="Arial, sans-serif" fontSize="10" fontWeight="800" fill="#fff" textAnchor="middle" letterSpacing="1.5">GITAM</text>
-      <line x1="10" y1="28.5" x2="46" y2="28.5" stroke="#FFD700" strokeWidth="1"/>
-      <text x="28" y="39" fontFamily="Arial, sans-serif" fontSize="6" fontWeight="500" fill="#aac4ff" textAnchor="middle" letterSpacing="0.3">DEEMED UNIVERSITY</text>
-    </svg>
-  );
+  return <img src="/gitam-logo.png" alt="GITAM University" style={{ width: 44, height: 44, objectFit: "contain" }} />;
 }
 
 const education = [
