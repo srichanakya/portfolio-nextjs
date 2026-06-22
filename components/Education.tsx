@@ -75,7 +75,7 @@ export default function Education() {
 
               <div style={{ display: "flex", flexDirection: isMobile ? "column" : "row", justifyContent: "space-between", alignItems: "flex-start", gap: 16, marginBottom: 24 }}>
                 <div style={{ display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap" }}>
-                  <div style={{ width: 56, height: 56, borderRadius: 14, background: edu.school.includes("Texas") ? edu.logoBg : "#fff", border: `1px solid ${edu.color}25`, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, overflow: "hidden", padding: edu.school.includes("Texas") ? 0 : 4 }}>
+                  <div style={{ width: 56, height: 56, borderRadius: 14, background: edu.logoBg, border: `1px solid ${edu.color}25`, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, overflow: "hidden" }}>
                     {edu.school.includes("Texas") ? <UTDLogo /> : <GitamLogo />}
                   </div>
                   <div>
