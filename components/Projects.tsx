@@ -11,10 +11,38 @@ function GithubIcon() {
 }
 
 const projects = [
-  { id: 1, title: "Payment Processing Platform", category: "FinTech Infrastructure", description: "Enterprise-grade real-time payment processing system handling millions of transactions daily. Built with fault-tolerant architecture and sub-100ms latency.", achievements: ["Processed 10M+ transactions monthly with 99.99% uptime", "Sub-100ms P95 latency across all payment types", "Integrated with 15+ banking APIs and payment networks"], tech: ["Java 17", "Spring Boot", "Kafka", "MongoDB", "AWS", "Docker"], color: "#2997ff", gradient: "linear-gradient(135deg, #2997ff, #34aadc)", featured: true },
-  { id: 2, title: "Transaction Orchestrator", category: "Distributed Systems", description: "Intelligent payment orchestration engine with smart routing, automatic failover, and real-time reconciliation across distributed microservices.", achievements: ["Reduced payment failures by 94% via intelligent routing", "Orchestrates 50+ microservice interactions per transaction", "Real-time monitoring with custom dashboards"], tech: ["Java", "Spring Boot", "Kafka", "Redis", "PostgreSQL", "Docker"], color: "#a78bfa", gradient: "linear-gradient(135deg, #a78bfa, #ec4899)", featured: true },
-  { id: 3, title: "Enterprise CRM Platform", category: "Enterprise Software", description: "Comprehensive CRM platform for William Demant hearing care network, managing thousands of clinics, patients, and hearing care professionals.", achievements: ["Serves 3000+ hearing care clinics globally", "40% reduction in data retrieval time", "100+ configurable automation rules"], tech: ["Java", "Spring Boot", "MongoDB", "Kafka", "TypeScript"], color: "#34d399", gradient: "linear-gradient(135deg, #34d399, #2997ff)", featured: false },
-  { id: 4, title: "Automated Testing Framework", category: "Developer Tools", description: "Comprehensive test automation framework for microservices. Supports integration, contract, and performance testing with parallel execution.", achievements: ["70% reduction in manual regression testing time", "99% test reliability with flaky test detection", "Parallel execution across 20+ microservices"], tech: ["Java", "TestContainers", "JUnit 5", "Mockito", "WireMock"], color: "#f59e0b", gradient: "linear-gradient(135deg, #f59e0b, #ef4444)", featured: false },
+  {
+    id: 1, title: "Job Application Tracker", category: "Full Stack",
+    description: "A full-stack job application tracker to manage and monitor job applications with real-time status updates and a comprehensive dashboard.",
+    achievements: ["Status tracking across Applied, Interview Scheduled, and Offer Received stages", "Spring Boot REST API backend with React frontend", "Real-time dashboard with application statistics and filters"],
+    tech: ["Java", "Spring Boot", "ReactJS", "REST APIs", "JavaScript"],
+    color: "#2997ff", gradient: "linear-gradient(135deg, #2997ff, #34aadc)", featured: true,
+    github: "https://github.com/srichanakya/ApplicationTracker_Springboot",
+  },
+  {
+    id: 2, title: "Online Movie Reservation", category: "Web Application",
+    description: "End-to-end online movie reservation system built with a full web stack — browse movies, select seats, and complete bookings with a clean UI.",
+    achievements: ["Full reservation flow: browsing, seat selection, and booking confirmation", "Server-side rendering with Node.js and EJS templating", "Persistent data storage with MongoDB"],
+    tech: ["Node.js", "MongoDB", "EJS", "HTML", "CSS", "JavaScript"],
+    color: "#a78bfa", gradient: "linear-gradient(135deg, #a78bfa, #ec4899)", featured: true,
+    github: "https://github.com/srichanakya/onlinemoviereservation",
+  },
+  {
+    id: 3, title: "Message Level Simulator", category: "Real-Time Systems",
+    description: "A real-time message level simulator demonstrating WebSocket-based bidirectional communication between clients and server.",
+    achievements: ["Live bidirectional messaging using WebSocket protocol", "Simulates real-time event-driven communication patterns", "Lightweight Node.js server with EJS-rendered client"],
+    tech: ["Node.js", "WebSockets", "EJS", "JavaScript"],
+    color: "#34d399", gradient: "linear-gradient(135deg, #34d399, #2997ff)", featured: false,
+    github: "https://github.com/srichanakya/MessageLevelSimulator",
+  },
+  {
+    id: 4, title: "Note Taking App", category: "Frontend",
+    description: "A clean, minimal note-taking web app built with ReactJS — create, view, and manage notes with a responsive and intuitive interface.",
+    achievements: ["Create and manage notes with a simple, distraction-free UI", "Component-driven architecture built with React hooks", "Responsive design for desktop and mobile"],
+    tech: ["ReactJS", "JavaScript", "HTML", "CSS"],
+    color: "#f59e0b", gradient: "linear-gradient(135deg, #f59e0b, #ef4444)", featured: false,
+    github: "https://github.com/srichanakya/NoteTaking",
+  },
 ];
 
 const icons = ["#", "~", "@", "!"];
@@ -48,9 +76,9 @@ function ProjectCard({ project, index, isMobile }: { project: typeof projects[0]
             <span key={t} style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 980, padding: "3px 10px", fontSize: 11, color: "#86868b" }}>{t}</span>
           ))}
         </div>
-        <a href="https://github.com/srichanakyayennana" target="_blank" rel="noopener noreferrer"
+        <a href={(project as any).github} target="_blank" rel="noopener noreferrer"
           style={{ display: "inline-flex", alignItems: "center", gap: 6, padding: "8px 16px", borderRadius: 980, fontSize: 13, fontWeight: 500, color: "#f5f5f7", background: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.1)", textDecoration: "none", width: "fit-content" }}>
-          <GithubIcon /> GitHub
+          <GithubIcon /> View on GitHub
         </a>
       </div>
     </motion.div>
