@@ -23,19 +23,35 @@ function AccentureLogo() {
 
 const experiences = [
   {
-    company: "Goldman Sachs", role: "Software Developer Analyst", period: "Sept 2024 – Present", location: "Dallas, Texas",
+    company: "Goldman Sachs", role: "Software Engineer Analyst", period: "Sept 2024 – Present", location: "Texas, United States",
     color: "#2997ff", gradient: "linear-gradient(135deg, #2997ff, #34aadc)", logoBg: "linear-gradient(135deg, #0a2540, #0d3060)",
-    description: "Engineered mission-critical payment infrastructure processing millions of transactions daily across global financial markets.",
-    highlights: ["Built and maintained RTP (Real-Time Payments) processing pipeline handling high-volume, low-latency transactions", "Developed SEPA payment orchestration system complying with European payment standards and ISO 20022", "Architected payment orchestration layer with intelligent routing and failover mechanisms", "Led Java migration initiatives, modernizing legacy systems to Spring Boot 3.x", "Collaborated with cross-functional teams across London, New York, and Dallas engineering hubs"],
-    tech: ["Java 17", "Spring Boot", "Kafka", "MongoDB", "AWS", "Docker"], logo: "GS",
+    description: "Engineered mission-critical payment infrastructure for the Orchestrator Payment Engine, processing 10,000+ real-time transactions per day across global financial markets.",
+    highlights: [
+      "Developed 5+ backend microservices for the Orchestrator Payment Engine from the ground up using Java Spring Boot, Camunda, Kafka, and AWS, enabling processing of 10,000+ real-time payment transactions per day.",
+      "Implemented SWIFT and Fed payment gateways covering inbound/outbound message validation and routing across international and domestic rails, reducing transaction processing errors by 30%.",
+      "Designed and enhanced Camunda/Zeebe workflows for payment routing, exception handling, and SLA-driven retries, improving payment success rate by 25% across multi-rail decision logic.",
+      "Integrated Kafka-based event streams enabling sub-100ms latency asynchronous communication between 8+ upstream and downstream services, maintaining 99.9% SLA compliance.",
+      "Owned and delivered the Reconciliation Service end-to-end (built from scratch), improving reconciliation accuracy by 40% and reducing manual intervention by operations teams.",
+      "Managed the Alerting Service, implementing 15+ new alert rules, reducing mean time to detect (MTTD) incidents by 35% and improving overall system observability.",
+      "Developing WIMP (Where Is My Payment), a centralized payment visibility service exposing standardized APIs and shared libraries consumed by upstream and downstream services to query real-time payment status, eliminating point-to-point integrations.",
+      "Led regression and production validation across 3+ major releases, achieving zero critical post-deployment incidents over 6 consecutive release cycles.",
+      "Reviewed 100+ merge requests, enforcing coding standards and best practices that reduced defect escape rate by 20% in production.",
+    ],
+    tech: ["Java", "Spring Boot", "Camunda", "Zeebe", "Kafka", "AWS", "SWIFT", "Fed Gateway", "RTP"], logo: "GS",
   },
   {
-    company: "Accenture", role: "Associate Software Engineer, Java Backend", period: "Aug 2020 – Jun 2022", location: "Remote",
+    company: "Accenture", role: "Associate Software Engineer", period: "Aug 2020 – Jun 2022", location: "Hyderabad, India",
     color: "#a100ff", gradient: "linear-gradient(135deg, #a100ff, #7b00cc)", logoBg: "linear-gradient(135deg, #1a0033, #0f001f)",
     client: "William Demant",
-    description: "Embedded with William Demant engineering team, building backend infrastructure and CRM platform for a global hearing healthcare leader.",
-    highlights: ["Designed and implemented enterprise CRM platform serving thousands of hearing care professionals", "Built automated testing framework reducing regression testing time by 70%", "Implemented event-driven architecture with Kafka for real-time data synchronization", "Developed RESTful APIs with Spring Boot for internal and external service integrations", "Established backend engineering best practices and code review processes"],
-    tech: ["Java", "Spring Boot", "Kafka", "PostgreSQL", "Docker", "REST APIs"], logo: "ACC",
+    description: "Embedded with William Demant engineering team, building high-performance backend infrastructure and automation tooling for a global hearing healthcare leader.",
+    highlights: [
+      "Developed a high-performance CRM web application for William Demant using Java and Spring Web Flux, handling real-time reactive data streams and improving application responsiveness for end users.",
+      "Built an end-to-end automation testing tool for report management workflows, reducing manual QA effort by 60% and ensuring accuracy across 10+ report types and validation scenarios.",
+      "Designed and deployed 3+ microservices to ingest, parse, and persist large-scale Excel datasets (500K+ rows) into relational databases, reducing data processing time by 50% compared to manual workflows.",
+      "Established RESTful and event-driven communication protocols between microservices, ensuring reliable data flow and decoupled architecture across distributed services.",
+      "Implemented CI/CD pipelines using Jenkins and GitLab CI, cutting deployment time by 40% and automating build, test, and release stages; enforced code quality via SonarQube, maintaining code coverage above 80%.",
+    ],
+    tech: ["Java", "Spring Web Flux", "Spring Boot", "Jenkins", "GitLab CI", "SonarQube", "REST APIs", "PostgreSQL"], logo: "ACC",
   },
 ];
 
