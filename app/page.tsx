@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Expertise from "../components/Expertise";
 import Experience from "../components/Experience";
+import Education from "../components/Education";
 import TechStack from "../components/TechStack";
 import Projects from "../components/Projects";
 import Metrics from "../components/Metrics";
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <Expertise />
       <Experience />
+      <Education />
       <Projects />
       <TechStack />
       <Metrics />
